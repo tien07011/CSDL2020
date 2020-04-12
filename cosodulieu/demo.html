@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đánh giá môn học</title>
+
+    <link rel="stylesheet" href="http://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    <div id="top">
+        <div class="w3-container w3-row">
+            <div class="w3-third">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="w3-twothird " style="text-align: right;">
+                 <h4>Đại học quốc gia Hà Nội<h4>
+            </div>   
+        </div>
+        <!-- end baner       -->
+        <div class="w3-bar w3-green w3-xlarge">
+            <a href="#" class="w3-bar-item w3-button">Course</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small">Các khoá học của tôi</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small">Ngôn ngữ</a>
+            <a href="#" class="w3-bar-item w3-button w3-right w3-hide-small" onclick="openmodel()">Đăng nhập</a>
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large"
+            w3-hide-medium" onClick="opennav()">&#9776; </a>
+        </div>
+        <div id="nav" class="w3-bar-block w3-teal w3-large w3-hide w3-hide-large w3-hide-medium">
+            <a href="#" class="w3-bar-item w3-button">Các khoá học của tôi</a>
+            <a href="#" class="w3-bar-item w3-button">Ngôn ngữ</a>
+            <a href="#" class="w3-bar-item w3-button">Đăng nhập</a>
+        </div>
+        <div id="modal" class="w3-modal"> 
+            <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="width: 500px;">
+                <header class="w3-teal w3-container">
+                    <span onclick="closemodal()" class="w3-button w3-display w3-topright">&times;</span>
+                    <h2>Đăng nhập hệ thống </h2>   
+                </header>
+                <div class="w3-container w3-card-4 w3-round">
+                <form action="='#'">      
+                    <h4>User Name</h4>
+                    <input type="text" w3-input w3-border w3-round>
+                    <h4>PassWord</h4>
+                    <input type="password" class=" w3-input w3-round w3-border">
+                    <p style="text-align: right;">
+                        <button class="w3-button w3-teal w3-large ">Đăng nhập</button>
+                    </p>
+                    <hr>
+                </form>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>  <!-- end top  -->
+    <div id="main" class="w3 row w3-container w3-panel">
+        <div class="w3-twothird">
+            traia
+        </div>
+        <div class="w3-third">
+            phari
+        </div>
+
+    </div> 
+    <div id="bot">
+
+    </div>
+    <script>
+        function opennav(){
+            var x = document.getElementById("nav");
+            if (x.className.indexOf("w3-show") ==  -1){
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+     /*   function opentabs(tabName){
+            var i;
+            var x = document.getElementsByClassName("tabs");
+            for (i=0; i<x.length;++i){
+                x[i].style.display = "none";
+            }
+            document.getElementsById(tabName).style.display = "block";
+        } */
+        function openmodel(){
+            document.getElementById("modal").style.display = "block";
+        }
+        function closemodal(){
+            document.getElementById("modal").style.display = "none";
+        }
+    </script>
+</body>
+</html>
