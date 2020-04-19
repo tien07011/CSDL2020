@@ -1,0 +1,83 @@
+html { /*background*/
+    background: url("./images/background.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;}
+.game { /*màn hình trắng chơi game*/
+	z-index: 0;
+	position: relative;
+	margin: 15px auto 20px;
+	width: 960px;
+	min-height: 600px;
+	border-radius: 15px;
+	background: #fff;}
+.head{ /*đầu màn hình game*/
+	border-bottom: 1px solid black;
+	line-height: 53px;
+	position: relative;
+	padding: 0px 20px;
+	text-decoration: none;
+	font-size: 25px;} 
+.back-link{ /*nút quay lai*/
+	font-size: 20px;
+	text-decoration: none;
+}
+.playgame{ /*nut play*/
+	font-size: 40px;
+	text-decoration: none;
+	line-height: 9.0;
+	margin-left: 750px;
+}
+/* af */
+.playscreen{
+	padding: 4px;}
+.heading{
+	font-size: 45px;}
+.place{
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	padding-top: 1px;
+	margin-top: -1px;
+	line-height: 1.5;
+}
+/* test */
+.outer {
+    padding: 5px;
+    margin: 0 7px;
+    vertical-align: baseline;
+    line-height: 1;
+	font-size: 1px;}
+.gameplay { /*màn hình trắng chơi game*/
+	z-index: 0;
+	position: relative;
+	margin: 15px auto 20px;
+	width: 960px;
+	min-height: 600px;
+	border-radius: 15px;
+	background: url("./images/bgplay.jpg")}
+.answers li {
+	border: 1px solid #333333;
+	cursor: pointer;
+	margin-top: 10px;
+	padding: 10px;
+}
+li {
+	margin: 0;
+	padding: 0;
+}
+.answers {
+	width: 200px;
+	height: 200px;
+}
+.question {
+	margin: center;
+}
+.restart {
+	display: none;
+}
+ul {
+    list-style: none;
+}

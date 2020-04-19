@@ -1,0 +1,33 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+.list-games {
+    flex-direction: column;
+    text-align: center;
+}
+.list-games {
+    display: flex;
+    justify-content: space-around;
+}
+
+.gameabc {
+    width: 180px;
+    padding: 5px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.playscreen {
+    flex-grow: 3;
+    justify-content: center;
+    text-align: center;
+    padding: 5px 0px;
+}
+.game-content a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
